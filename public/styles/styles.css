@@ -275,65 +275,54 @@ h3 {
 }
 
 /* register form */
-.hr-register {
-  width: 100%;
-  margin: 0 0 2rem 0;
-  height: 0;
-  border: 1px solid #54dcf2;
-}
-
-.register-form {
-  margin: 2rem;
-}
-
-.register-heading {
-  font-style: normal;
-  font-weight: bold;
-  margin: 0 0 1.8rem 0;
-  font-size: 120px;
-  line-height: 120px;
-  text-shadow: -5px 0px 10px rgba(84, 220, 242, 0.25),
-    5px 0px 10px rgba(84, 220, 242, 0.25),
-    0px -5px 10px rgba(84, 220, 242, 0.25),
-    0px 5px 10px rgba(84, 220, 242, 0.25);
+.register-form{
+  margin-top: 2rem;
 }
 
 .form-input {
   border-radius: 10px;
   border: none;
+  height: auto;
+  max-width: 100%;
   background-color: #3e4a51;
   color: white;
   text-align: left;
-  padding: 1rem;
-  width: 30rem;
+  margin-bottom: 1rem;
+  padding:1rem 3rem;
   font-size: 1rem;
+  width: 30rem;
 }
 
 .form-input:focus {
-  background-color: white;
-  color: black;
   outline: none;
 }
 
-.register-send-button {
-  text-align: right;
-  margin-left: 130px;
-}
-
-.form-input::placeholder {
-  color: white;
+.form-input::placeholder, input:-internal-autofill-selected  {
   font-size: 1rem;
+  background-color: #3e4a51;
+  color: white;
 }
 
 .f-text {
   font-size: 0.8rem;
 }
-
+.adjust{
+  margin:2rem 0;
+  padding-left:2rem;
+  text-align:right;
+}
 
 @media (max-width: 992px) {
-  .img-3{
-    max-width: 
+
+  .form-input{
+    width: 100%;
   }
+  .form-input, .form-input::placeholder,p {
+    text-align: center;
+  }
+  .img-3{
+   } max-width: 
+  
   .heading-home{
     white-space: normal;
   }
@@ -424,5 +413,8 @@ h3 {
   .navbar-brand-inside{
     display: none;
   }
-
+  .adjust{
+    padding-left:0;
+    text-align:center;
+  }
 }
