@@ -268,7 +268,6 @@ h3 {
   border-radius: 10px;
   box-shadow: none;
   height: inherit;
-
 }
 .form-container{
   padding: 0;
@@ -403,7 +402,7 @@ h3 {
   }
 
   .btn-submit {
-    max-width: 30%;
+    max-width: 40%;
   }
 
   .hr-about {
