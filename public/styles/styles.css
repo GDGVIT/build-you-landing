@@ -2,6 +2,10 @@
   font-family: 'Metropolis';
   src: url('fonts/Metropolis-Black.otf');
 }
+*{
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-color: #161616;
@@ -9,6 +13,7 @@ body {
   color: #f1ebeb;
   overflow-x: hidden;
   padding-top: 65px;
+  width: 100vw;
 }
 
 .container {
@@ -309,21 +314,6 @@ h3 {
   text-align:right;
 }
 
-@media(max-width: 552px){
-  .glide__arrow--left{
-    transform: translateX(-25vw);
-  }
-  
-  .glide__arrow--right{
-    transform: translateX(25vw);
-  }
-  .btn-submit, .notify> input{
-    padding: 0.5rem 1rem;
-  }
-  .button{
-    width: 100%;
-  }
-}
 
 
 @media (max-width: 992px) {
@@ -429,4 +419,49 @@ h3 {
     text-align:center;
   }
 }
+
+
+@media(max-width: 552px){
+  .heading-about{
+    font-size: 2.5rem;
+  }
+  .glide__arrow--left{
+    transform: translateX(-25vw);
+  }
+  
+  .glide__arrow--right{
+    transform: translateX(25vw);
+  }
+  .btn-submit, .notify input{
+    padding: 0.5rem ;
+  }
+  .button{
+    width: 100%;
+  }
+  .container {
+    width: 90vw;
+    margin: 0 5vw;
+    
+  }
+  p{
+    font-size: 1rem;
+  }
+  h3{
+    font-size: 1.2rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  .btn{
+    font-size: 1rem;
+  }
+}
+@media (max-width: 320px){
+  .button{
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
+
+
 
