@@ -2,6 +2,10 @@
   font-family: 'Metropolis';
   src: url('fonts/Metropolis-Black.otf');
 }
+*{
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-color: #161616;
@@ -9,6 +13,7 @@ body {
   color: #f1ebeb;
   overflow-x: hidden;
   padding-top: 65px;
+  width: 100vw;
 }
 
 .container {
@@ -179,7 +184,6 @@ h3 {
 /* stream */
 
 .stream-display {
-  margin: 1rem;
   width: 100%;
   height: 435px;
   background: #5f5d5d;
@@ -187,10 +191,6 @@ h3 {
 }
 
 /* sponsor */
-.center {
-  text-align: center;
-  margin: 2rem 4rem;
-}
 
 
 .glide{
@@ -240,7 +240,7 @@ h3 {
 
 /* footer */
 .footer {
-  width: 100%;
+  width: 100vw;
   color: white;
   background: #3E4A51;
   padding: 10vh 10vw;
@@ -248,6 +248,7 @@ h3 {
 
 .notify {
   margin: 5rem 0;
+  padding: 0;
 }
 
 .notify input {
@@ -265,13 +266,15 @@ h3 {
 
 .btn-submit {
   display: inline-block;
-  padding: 0.3rem 2rem;
-  margin: 0 1rem;
+  padding: 0.5rem 2rem;
+  margin-left: 1rem;
   background: linear-gradient(266.51deg, #54DCF2 2.78%, #2A727D 137.53%);
   border-radius: 10px;
   box-shadow: none;
   height: inherit;
-
+}
+.form-container{
+  padding: 0;
 }
 
 /* register form */
@@ -299,8 +302,7 @@ h3 {
 
 .form-input::placeholder, input:-internal-autofill-selected  {
   font-size: 1rem;
-  background-color: #3e4a51;
-  color: white;
+  
 }
 
 .f-text {
@@ -312,6 +314,8 @@ h3 {
   text-align:right;
 }
 
+
+
 @media (max-width: 992px) {
 
   .form-input{
@@ -320,15 +324,13 @@ h3 {
   .form-input, .form-input::placeholder,p {
     text-align: center;
   }
-  .img-3{
-   } max-width: 
   
   .heading-home{
     white-space: normal;
   }
   .nav-logo {
     display: block;
-    margin-top: -40px;
+    margin-top: -50px;
   }
   .container {
     margin: 0 10vw;
@@ -381,6 +383,7 @@ h3 {
 
   .notify {
     margin: 2rem;
+
   }
 
   .footer {
@@ -388,9 +391,7 @@ h3 {
   }
 
   .btn-submit {
-    max-width: 30%;
-    padding: 0.3rem 1rem;
-
+    max-width: 40%;
   }
 
   .hr-about {
@@ -418,3 +419,49 @@ h3 {
     text-align:center;
   }
 }
+
+
+@media(max-width: 552px){
+  .heading-about{
+    font-size: 2.5rem;
+  }
+  .glide__arrow--left{
+    transform: translateX(-25vw);
+  }
+  
+  .glide__arrow--right{
+    transform: translateX(25vw);
+  }
+  .btn-submit, .notify input{
+    padding: 0.5rem ;
+  }
+  .button{
+    width: 100%;
+  }
+  .container {
+    width: 90vw;
+    margin: 0 5vw;
+    
+  }
+  p{
+    font-size: 1rem;
+  }
+  h3{
+    font-size: 1.2rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  .btn{
+    font-size: 1rem;
+  }
+}
+@media (max-width: 320px){
+  .button{
+    width: 100%;
+    padding: 0.5rem;
+  }
+}
+
+
+
