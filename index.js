@@ -24,3 +24,5 @@ $(document).ready(function(){
 
 
     new Glide('.glide', config).mount()
+
+document.querySelectorAll('body').scrollLeft=0;
