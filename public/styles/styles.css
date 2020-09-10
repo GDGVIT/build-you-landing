@@ -10,6 +10,7 @@
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #161616;
@@ -127,7 +128,10 @@ h3 {
   border: none;
   letter-spacing: 1px;
   border-radius: 0.5rem;
-  width: 350px;
+  
+}
+.button-brochure{
+  width: 340px;
 }
 
 .button:hover, .button:focus, .button:active, .btn:active, .btn:not(:disabled):not(.disabled).active, .btn:not(:disabled):not(.disabled):active  {
