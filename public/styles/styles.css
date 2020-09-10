@@ -225,6 +225,10 @@ h3 {
   padding: 2rem ;
 }
 
+.glide__slide img{
+  padding: 1rem;
+}
+
 .glide__arrow--left{
   transform: translateX(-8vw);
 }
@@ -466,9 +470,9 @@ h3 {
   .btn{
     font-size: 1rem;
   }
-  .contact-inner{
+  /*.contact-inner{
     text-align: left;
-  }
+  }*/
   .container-bottom{
     margin-bottom: 10vh;
   }
@@ -480,9 +484,9 @@ h3 {
     width: 100%;
     padding: 0.5rem;
   }
-  .contact-inner{
+  /*.contact-inner{
     text-align: left;
-  }
+  }*/
   .container-bottom{
     margin-bottom: 10vh;
   }
