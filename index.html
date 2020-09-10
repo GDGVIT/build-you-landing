@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   <title>BuildYou.com</title>
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
@@ -16,7 +16,8 @@
   
   
     <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  <script src="https://kit.fontawesome.com/9b41d119d7.js" crossorigin="anonymous"></script>
+
   <script src="https://kit.fontawesome.com/9b41d119d7.js" crossorigin="anonymous"></script>
     <!-- custom css -->
     <link rel="stylesheet" href="./public/styles/styles.css">
@@ -25,7 +26,7 @@
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="80">
   <section id="section-1">
-    <nav class="navbar navbar-expand-lg fixed-top" id="myScrollspy">
+    <nav class="navbar navbar-expand-lg fixed-top static-top" id="myScrollspy">
  
       <!-- Toggler -->
       <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
@@ -35,35 +36,33 @@
           
         </span>
       </button>
-      
-        <a class="text-center nav-logo navbar-brand" href="#home">
-          <img src="./public/images/Logo.svg" class="brand-pic">
-        </a>
+   
     
       <!-- List Items -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto nav-pills md" style="width: 100%;">
-          <li class="nav-item mx-auto" data-toggle="collapse" data-target=".navbar-collapse">
-            <a class="nav-link mx-4 mt-2" href="#home">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item mx-auto" data-toggle="collapse" data-target=".navbar-collapse">
-            <a class="nav-link mx-4 mt-2" href="#about">About Us</a>
-          </li>
-          <li class="nav-item mx-auto" data-toggle="collapse" data-target=".navbar-collapse">
-            <a class="nav-link mx-4 mt-2" href="#resources">Resources</a>
-          </li>
           <li>
             <a class="navbar-brand navbar-brand-inside" href="index.html">
-              <img src="./public/images/Logo.svg" class="brand-pic">
+              <img src="./public/images/Crescent.svg" class="brand-pic" style="height:50px;" alt="DSC Logo">
             </a>
           </li>
-          <li class="nav-item mx-auto" data-toggle="collapse" data-target=".navbar-collapse">
+          <li class="nav-item mx-auto"  data-target=".navbar-collapse">
+            <a class="nav-link mx-4 mt-2" href="#home">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mx-auto" data-target=".navbar-collapse">
+            <a class="nav-link mx-4 mt-2" href="#about">About Us</a>
+          </li>
+          <li class="nav-item mx-auto"  data-target=".navbar-collapse">
+            <a class="nav-link mx-4 mt-2" href="#resources">Resources</a>
+          </li>
+          
+          <li class="nav-item mx-auto"  data-target=".navbar-collapse">
             <a class="nav-link mx-4 mt-2" href="#stream" style="white-space: nowrap;">Stream</a>
           </li>
-          <li class="nav-item mx-auto" data-toggle="collapse" data-target=".navbar-collapse">
+          <li class="nav-item mx-auto"  data-target=".navbar-collapse">
             <a class="nav-link mx-4 mt-2" href="#sponsors" style="white-space: nowrap;">Sponsors</a>
           </li>
-          <li class="nav-item mx-auto" data-toggle="collapse" data-target=".navbar-collapse">
+          <li class="nav-item mx-auto"  data-target=".navbar-collapse">
             <a class="nav-link mx-4 mt-2" href="#contact" style="white-space: nowrap;">Contact Us</a>
           </li>
         </ul>
@@ -76,15 +75,15 @@
     <div class="container container1">
       <div class="row">
         <div class="col-lg-7 order-2 order-lg-1">
-          <div>
-            <h1 class="heading-home">Build You.com</h1>
+          <div data-aos="fade-right" data-aos-duration="200">
+            <h1 class="heading-home">Build You</h1>
           </div>
           <p>BuildYou.com is a unique opportunity for all budding developers to code along, and learn how to build and
             customize their own fully-working personal portfolio website from scratch.</p>
-          <a href="register.html"><button class="btn btn-lg button">Register</button></a>
+          <a href="http://info.vit.ac.in/gravitas2020/gravitas_login.asp"><button class="btn btn-lg button button-register">Register</button></a>
         </div>
         <div class="col-lg-5 order-1 order-lg-2 mb-5 mb-lg-0 img-container">
-          <img src="./public/images/Home.svg" alt="" class="img-fluid home-image">
+          <img src="./public/images/Home.svg" alt="home-image" class="img-fluid home-image" data-aos="fade-up" data-aos-duration="200">
         </div>
       </div>
     </div>
@@ -95,7 +94,7 @@
       <div class="row">
         <div class="col-lg-4"></div>
         <div class="col-lg-8">
-          <h2 class="heading-about">About Us</h2>
+          <h2 class="heading-about" data-aos="fade-left" data-aos-duration="200">About Us</h2>
           <div class="d-flex d-lg-block justify-content-center">
             <div class="hr-about"></div>
           </div>
@@ -106,13 +105,13 @@
       
       <div class="row about-row">
         
-        <div class="col-lg-4 mb-5 mb-lg-0">
+        <div class="col-lg-4 mb-5 mb-lg-0 d-none d-lg-block">
 
           <div class="text-right img-container pr-md-5  pr-lg-0">
-            <img src="./public/images/DSC_Hologram.svg" alt="" class="img-fluid img-2">
+            <img src="./public/images/DSC_Hologram.svg" alt="DSC Hologram" class="img-fluid img-2" data-aos="fade-up" data-aos-duration="200">
           </div>
           <div class="text-left img-container pl-md-5 pl-lg-0">
-            <img src="./public/images/VIT_Hologram.svg" alt="" class="img-fluid  img-2">
+            <img src="./public/images/VIT_Hologram.svg" alt="VIT Hologram" class="img-fluid  img-2" data-aos="fade-up" data-aos-duration="200">
           </div>
 
         </div>
@@ -120,12 +119,18 @@
 
         <div class="col-lg-8">
           <div>
+            <div class="img-container d-lg-none mb-5">
+              <img src="./public/images/DSC_Hologram.svg" alt="DSC Hologram" class="img-fluid img-2" data-aos="fade-up" data-aos-duration="200">
+            </div>
             <p>DSC VIT, one of the most esteemed technical chapters in VIT, is a developers’ community powered by Google
               Developers. It is a highly reputed non-profit organization aimed at empowering enthusiasts in developing
               in
               various technical domains and building solutions for real-world problems by working alongside a
               well-established design and management team.</p>
             <br>
+            <div class="img-container d-lg-none  mb-5">
+              <img src="./public/images/VIT_Hologram.svg" alt="VIT Hologram" class="img-fluid  img-2" data-aos="fade-up" data-aos-duration="200">
+            </div>
             <p>Vellore Institute of Technology (VIT), Vellore is one of the top-rated engineering colleges in India and
               an
               Institute of Eminence (IoE). The University works on ideas and executes tasks of different domains under
@@ -142,7 +147,7 @@
   <section id="resources">
     <div class="container container1">
       <div>
-        <h1 class="heading-about">Resources</h1>
+        <h1 class="heading-about" data-aos="fade-right" data-aos-duration="200">Resources</h1>
         <div class="d-flex d-lg-block justify-content-center">
           <div class="hr-about"></div>
         </div>
@@ -151,41 +156,39 @@
         
         <div class="col-lg-8 order-lg-1 order-2">
           
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu mattis cras posuere est lectus morbi massa
-            dapibus bibendum. Lacus bibendum neque erat tellus. Vehicula ultrices erat sit sed sed turpis eget. In
-            tellus quisque amet viverra. In fermentum tincidunt mus viverra enim. Massa massa sed diam commodo enim
-            parturient nulla. Interdum ut nibh cursus pretium ipsum vel facilisi viverra. Condimentum ac tortor faucibus
-            semper.
+          <p>Find everything you need right from the image assets, CDN for fonts and helpful cheat sheets to build your portfolio website by clicking the button down below. Follow along with the livestream so that your website building journey is a smooth-sailing one!
           </p>
-          <p>Condimentum dui, duis elementum ut facilisi pellentesque enim. Orci morbi in quam pulvinar. Et, a
-            diam at cras at augue felis. Sed mattis aliquam quisque non. In est, tristique eu viverra vulputate
-            eleifend. Non gravida odio in scelerisque nisl, eleifend erat dui. Eget fames mattis ornare eleifend
-            interdum. Felis amet senectus venenatis mollis cras tellus, lacus velit. Justo lectus iaculis risus eget sed
-            enim.</p>
+          <a href="https://drive.google.com/drive/folders/1eymnrK_vR5InuOpHXxhGcBau61549E0E?usp=sharing"><button class="btn btn-lg button button-register">Resources</button></a>
+
         </div>
         <div class="col-lg-4 text-center order-1 order-lg-2 mb-5 mb-lg-0 img-container">
-          <img src="./public/images/Resources_Hologram.svg" alt="" class="img-fluid img-3">
+          <img src="./public/images/Resources_Hologram.svg" alt="Resources Hologram" class="img-fluid img-3" data-aos="fade-up" data-aos-duration="200">
         </div>
+
       </div>
+     
+
     </div>
   </section>
 
   <section id="stream" >
     <div class="container">
       <div class="text-lg-right">
-        <h1 class="heading-about">Stream</h1>
+        <h1 class="heading-about" data-aos="fade-left" data-aos-duration="200">Trailer</h1>
         <div class="d-flex  justify-content-center justify-content-lg-end">
           <div class="hr-about"></div>
         </div>
       </div>
-      <div class="stream-display"></div>
+      
+        <iframe width="100%" height="435px;" src="https://www.youtube.com/embed/A9luzmLIzMs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
     </div>
   </section>
 
   <section id="sponsors" >
     <div class="container container1">
       <div>
-        <h1 class="heading-about">Sponsors</h1>
+        <h1 class="heading-about" data-aos="fade-right" data-aos-duration="200">Sponsors</h1>
         <div class="d-flex d-lg-block justify-content-center">
           <div class="hr-about"></div>
         </div>
@@ -202,7 +205,7 @@
             conducting this free event.</p>
         </div>
         <div class="col-lg-4 text-center mb-5 mb-lg-0 order-1 order-lg-2 img-container">
-          <img src="./public/images/Sponsors_Hologram.svg" alt="" class="img-fluid img-2">
+          <img src="./public/images/Sponsors_Hologram.svg" alt="Sponsors Hologram" class="img-fluid img-2" data-aos="fade-up" data-aos-duration="200">
         </div>
       </div>
 
@@ -212,23 +215,23 @@
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             <li class="glide__slide">
-              <img id="sponsor1" src="./public/images/Sponsors_images/sketch.png" class="img-fluid">
+              <img id="sponsor1" src="./public/images/Sponsors_images/sketch.png" class="img-fluid" alt="sponsor1">
     
             </li>
             <li class="glide__slide">
-              <img id="sponsor1" src="./public/images/Sponsors_images/github.png" class="img-fluid">
+              <img id="sponsor1" src="./public/images/Sponsors_images/github.png" class="img-fluid" alt="sponsor2">
     
             </li>
             <li class="glide__slide">
-              <img id="sponsor1" src="./public/images/Sponsors_images/intel.png" class="img-fluid">
+              <img id="sponsor1" src="./public/images/Sponsors_images/intel.png" class="img-fluid" alt="sponsor2">
 
             </li>
             <li class="glide__slide">
-              <img id="sponsor1" src="./public/images/Sponsors_images/jetbrains.png" class="img-fluid">
+              <img id="sponsor1" src="./public/images/Sponsors_images/jetbrains.png" class="img-fluid" alt="sponsor3">
 
             </li>
             <li class="glide__slide">
-              <img id="sponsor1" src="./public/images/Sponsors_images/figma-1-logo.png" class="img-fluid">
+              <img id="sponsor1" src="./public/images/Sponsors_images/figma-1-logo.png" class="img-fluid" alt="sponsor4">
 
             </li>
             
@@ -241,8 +244,8 @@
       </div>
 
       <div class="text-center d-flex flex-column">
-        <a href="sponsors.html"><button class="btn btn-lg button">Sponsor Us</button></a>
-        <a href=""><button class="btn btn-lg button">Download Brochure</button></a>
+        <a href="sponsors.html"><button class="btn btn-lg button button-brochure">Sponsor Us</button></a>
+        <a href="Build YOU.com.pdf" download="Build YOU.com.pdf"><button class="btn btn-lg button button-brochure">Download Brochure</button></a>
       </div>
     </div>
 
@@ -254,46 +257,58 @@
       <div class="row">
         <div class="col-lg-4"></div>
         <div class="col-lg-8">
-          <h1 class="heading-about">Contact Us</h1>
+          <h1 class="heading-about" data-aos="fade-left" data-aos-duration="200">Contact Us</h1>
           <div class="d-flex d-lg-block justify-content-center">
             <div class="hr-about"></div>
           </div>
         </div>
       </div>
       <div class="row resources-row">
-        <div class="col-lg-4 mb-5 mb-lg-0 img-container">
-          <img src="./public/images/Contact_Hologram.svg" class=" img-fluid img-2" alt="">
+        <div class="col-lg-4 mb-5 mb-lg-0 img-container" data-aos="fade-up" data-aos-duration="200">
+          <img src="./public/images/Contact_Hologram.svg" class=" img-fluid img-2" alt="Contact Hologram" data-aos="fade-up" data-aos-duration="200">
         </div>
         <div class="col-lg-8">
           
           <h2 class="mb-5 ">Socials</h2>
           <div class="d-flex justify-content-between">
             <a href="#"><img src="./public/images/socialmedia+contact_icons/instagram_pink.svg" class="social-image"
-                alt=""></a>
+                alt="Instagram"></a>
             <a href="#"><img src="./public/images/socialmedia+contact_icons/facebook_pink.svg" class="social-image"
-                alt=""></a>
+                alt="facebook"></a>
             <a href="#"><img src="./public/images/socialmedia+contact_icons/linkedin_pink.svg" class="social-image"
-                alt=""></a>
+                alt="Linkedin"></a>
             <a href="#"><img src="./public/images/socialmedia+contact_icons/twitter_pink.svg" class="social-image"
-                alt=""></a>
+                alt="Twitter"></a>
             <a href="#"><img src="./public/images/socialmedia+contact_icons/mail_pink.svg" class="social-image"
-                alt=""></a>
+                alt="email"></a>
           </div>
-          <h2 class="mt-5">Point Of Contact</h2>
-          <div class="row">
-            <div class="contact col-lg-6">
-              <h3>Angad Sharma</h3>
-              <img src="./public/images/socialmedia+contact_icons/mail_blue.svg" class="contact-image" alt="">
-              <p>angadsharma1016@gmail.com </p><br>
-              <img src="./public/images/socialmedia+contact_icons/phone_blue.svg" class="contact-image" alt="">
-              <p> +91 9971673330 </p>
+         
+          <div class="row mt-5">
+            <div class="contact col-lg-6 text-md-center text-left text-lg-left">
+              <h2>Angad Sharma</h2>
+              <h5>Community Lead</h5>
+              <div class="contact-inner">
+                <img src="./public/images/socialmedia+contact_icons/mail_blue.svg" class="contact-image" alt="E-mail">
+                <a href="mailto:angadsharma1016@gmail.com"><p class="email">angadsharma1016@gmail.com </p></a>
+
+              </div>
+              <div class="contact-inner">
+                <img src="./public/images/socialmedia+contact_icons/phone_blue.svg" class="contact-image" alt="Phone">
+                <p> +91 9971673330 </p>
+              </div>
             </div>
-            <div class="contact col-lg-6">
-              <h3>Meherdeep Thakur</h3>
-              <img src="./public/images/socialmedia+contact_icons/mail_blue.svg" class="contact-image" alt="">
-              <p>meherdeept@gmail.com </p><br>
-              <img src="./public/images/socialmedia+contact_icons/phone_blue.svg" class="contact-image" alt="">
-              <p> +91 8700865402</p>
+            <div class="contact col-lg-6 text-md-center text-left text-lg-left">
+              <h2>Meherdeep Thakur</h2>
+              <h5>Management Lead</h5>
+              <div class="contact-inner">
+                <img src="./public/images/socialmedia+contact_icons/mail_blue.svg" class="contact-image" alt="E-mail">  
+                <a href="mailto:meherdeept@gmail.com"><p class="email">meherdeept@gmail.com </p></a>
+              </div>
+              <div class="contact-inner">
+                <img src="./public/images/socialmedia+contact_icons/phone_blue.svg" class="contact-image" alt="Phone">
+                <p> +91 8700865402</p>
+              </div>
+             
             </div>
           </div>
         </div>
@@ -301,74 +316,14 @@
     </div>
   </section>
 
-  <section>
-    <div class="footer">
-      <h1 class="footer-heading text-center">Developer Students Club VIT</h1>
-      <div class="row">
-
-        <div class="col-lg-7 text-center order-2 order-lg-1">
-          
-          <div class="row">
-            <div class="col-lg-4 text-center col-6">
-              
-              <h3 class="footer-text-small">Explore</h3>
-              <p class="f-text">Home</p>
-              <p class="f-text">About Us</p>
-              <p class="f-text">Resources</p>
-              <p class="f-text">Streams</p>
-              <p class="f-text">Sponsors</p> 
-              <p class="f-text">Contact Us</p>
-              <p class="f-text">Register</p>
-            </div>
-            <span class="col-lg-8 row col-6 ">
-              <div class="col-lg-6 text-center ">
-                <h3 class="footer-text-small">Socials</h3>
-                <p class="f-text">Instagram</p>
-                <p class="f-text">Twitter</p>
-                <p class="f-text">LinkedIn</p>
-                <p class="f-text">Facebook</p>
-
-
-
-
-              </div>
-              <div class="col-lg-6 text-center">
-                <h3 class="footer-text-small">Legal</h3>
-                <p class="f-text">Code Of Conduct</p>
-                <p class="f-text">Terms and Conditions</p>
-                <p class="f-text">Privacy Policy</p>
-              </div>
-            </span>
-            
-          </div>
-        </div>
-        <div class="col-lg-5 notify order-lg-2 order-1">
-          <p class="f-text  mb-2 text-center">Want to stay updated with the latest news about DSC VIT? Sign up and get notifications!</p>
-          <div class="d-flex align-items-baseline justify-content-center form-container">
-            <input type="email" placeholder="Enter your email" class="form-input">
-            <button class=" button btn-submit">Submit</button>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-
-
-
-  </section>
-
- 
-
+  
 
   <!-- bootstarp js -->
   <!-- JS, Popper.js, and jQuery -->
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-  
-    
+    AOS.init();
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
