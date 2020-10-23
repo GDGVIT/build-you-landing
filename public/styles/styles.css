@@ -514,4 +514,16 @@ h3 {
   }
 }
 
+.sponsor-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.sponsor-container>img{
+  border-radius: 10px;
+  
+  padding: 3rem;
+}
 

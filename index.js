@@ -11,12 +11,12 @@ $(document).ready(function(){
   
   const config={
     type: 'carousel',
-  perView: 4,
+  perView: 1,
   focusAt: 'center',
   breakpoints: {
   
     800: {
-      perView: 2
+      perView: 1
     },
     480: {
       perView: 1
